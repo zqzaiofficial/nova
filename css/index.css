@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+body {
+    background-color: #161616;
+}
+
+.container {
+    padding-top: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+#buildNum {
+    font-weight: 400;
+    margin-top: -9px;
+    margin-left: 2px;
+    color: magenta;
+}
+
+#header {
+    font-weight: 500;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+#discordButton {
+    background-color: #7289DA;
+    border-style: solid;
+    border-color: #5e71b5;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+    width: 33%;
+    max-width: 200px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#discordButton:hover {
+    scale: 1.1;
+}
+
+#downloadButton {
+    background-color: #c5a700;
+    border-style: solid;
+    border-color: #947e00;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+    width: 33%;
+    max-width: 200px;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#downloadButton:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#changelogButton {
+    background-color: #00c5a7;
+    border-style: solid;
+    border-color: #00947e;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+    width: 33%;
+    max-width: 200px;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s;
+}
+
+#changelogButton:hover {
+    scale: 1.1;
+}
+
+#footerText {
+    text-align: center;
+    font-size: 12px;
+    margin-top: 32vh;
+    font-weight: 100;
+}

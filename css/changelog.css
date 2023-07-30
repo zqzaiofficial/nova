@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', 'Poppins', sans-serif;
+    text-decoration: none;
+    text-rendering: optimizeLegibility;
+    color: white;
+}
+
+body {
+    background-color: #161616;
+}
+
+.container {
+    padding-top: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#buildNum {
+    font-weight: 400;
+    margin-top: -9px;
+    margin-left: 2px;
+    color: magenta;
+}
+
+#header {
+    font-weight: 500;
+}
+
+#changelogHeader {
+    font-weight: 400;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+
+.changelogContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2vh;
+}
+
+.changelogFrame {
+    background-color: #1f1f1f;
+    border-style: solid;
+    border-color: #5e71b5;
+    border-radius: 5px;
+    border-width: 2px;
+    padding: 10px;
+    width: 80%;
+    max-width: 400px;
+}
+
+.lime {
+    color: lime;
+    font-weight: 700;
+}
+
+.grey {
+    color: grey;
+    font-weight: 300;
+}
+
+p {
+    line-height: 1.5rem;
+}
+
+#homePageButton {
+    background-color: #1f1f1f;
+    border-style: solid;
+    border-color: #303030;
+    border-radius: 5px;
+    border-width: 2px;
+    width: 33%;
+    max-width: 200px;
+    text-align: center;
+    margin: 5px;
+    transition: 0.3s;
+    padding: 10px;
+}
+
+#homePageButton:hover {
+    padding: 15px;
+}
