@@ -1,2 +1,1 @@
-# star
-Star Client Website Open Source
+# Star Client
