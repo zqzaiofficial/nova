@@ -6,11 +6,20 @@
     text-decoration: none;
     text-rendering: optimizeLegibility;
     color: white;
+    overflow: hidden;
 }
 
 body {
     background-color: #161616;
 }
+
+#bugContent {
+    font-size: 0.85em;
+    color: #ff0033;
+    font-weight: 200;
+}
+
+
 
 .container {
     padding-top: 40vh;
@@ -61,7 +70,7 @@ body {
 }
 
 #discordButton:hover {
-    scale: 1.1;
+    transform: translateY(-0.5rem);
 }
 
 #downloadButton {
@@ -79,8 +88,7 @@ body {
 }
 
 #downloadButton:hover {
-    scale: 1.1;
-    cursor: pointer;
+    transform: translateY(-0.5rem);
 }
 
 #changelogButton {
@@ -98,7 +106,7 @@ body {
 }
 
 #changelogButton:hover {
-    scale: 1.1;
+    transform: translateY(-0.5rem);
 }
 
 #footerText {
