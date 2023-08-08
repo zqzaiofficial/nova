@@ -4,35 +4,73 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nova Client</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <meta content="Nova Client" property="og:title" />
     <meta content="One of the leading Minecraft bedrock ghost clients!" property="og:description" />
     <meta content="https://zqzaiofficial.github.io/nova" property="og:url" />
     <meta content="https://cdn.discordapp.com/attachments/1082091976876380292/1137194817995157624/Picsart_23-08-05_02-25-27-735.jpg" property="og:image" />
     <meta content="#3269ff" data-react-helmet="true" name="theme-color" />
     <link rel="icon" href="https://cdn.discordapp.com/attachments/1082091976876380292/1137195326026022984/Picsart_23-08-05_02-28-02-165.png">
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <h1 id="header">Nova Client</h1>
-        <p id="buildNum">V1.08</p>
-    </div>
+    <section id="headingArea">
+        <div class="headerDiv">
+            <h1>Enhance Minecraft <br>with <span class="novaHeader">Nova</span></h1>
+        </div>
 
-    <div class="container2">
-        <a href="./cmd.exe" target="_blank" id="downloadButton">Download</a>
-        <a href="https://discord.gg/WPexqbus6n" target="_blank" id="discordButton">Discord</a>
-        <a href="./changelog.html" id="changelogButton">Info</a>
-    </div>
+        <div class="headerButtons">
+            <a id="downloadButton" href="./cmd.exe">Download</a>
+            <a id="discordButton" href="https://discord.gg/WPexqbus6n">Discord</a>
+        </div>
 
-    <div class="container2">
-        <p id="bugContent">We are aware of a bug with high CPU usage after binding hotkeys, it is currently being looked at.</p>
-    </div>
+        <img id="headerImg" src="./preview.png">
+    </section>
+    <section id="featuresArea">
+        <div class="custom-shape-divider-top-1691485881">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
 
-    <div class="footer">
-        <p id="footerText">© 2023 Zqzai. All Rights Reserved.</p>
-    </div>
+        <div class="allContainer">
+            <div class="headerDiv">
+                <h1>Features:</h1>
+            </div>
+            <div class="cardHolder">
+                <div class="hidden">
+                    <h3>Effecienct Launching</h3>
+                    <p>Nova Client injects instantaneously, allowing for quick modification and<br> more play-time. Also, values are modified the moment they are<br>requested to change.</p>
+                </div>
+    
+                <div class="hidden2">
+                    <h3>Easy Updates</h3>
+                    <p>Upon launch, Nova Client automatically compares your client version to<br> the newest version, if it detects a new version, a messagebox will pop up!</p>
+                </div>
+    
+                <div class="hidden">
+                    <h3>Flawless Ejection</h3>
+                    <p>The moment Nova Client is closed, all modules disable themselves. On <br>top of this modified byte arrays are reverted, making it untracable.</p>
+                </div>
+    
+                <div class="hidden2">
+                    <h3>Self Destruction</h3>
+                    <p>By clicking the self-destruct button, a process occurs which causes<br>the client's traces to be erased and its binary swapped.</p>
+                </div>
+    
+                <div class="hidden">
+                    <h3>Ghost Client</h3>
+                    <p>Via various methods, Nova Client modifies the game without injecting<br>any actual DLL files into the Minecraft Process.</p>
+                </div>
+    
+                <div class="hidden2">
+                    <h3>Extremely Cheap</h3>
+                    <p>It's free, so what are you waiting for?</p>
+                </div>         
+        </div>
+    </section>
 </body>
 </html>
