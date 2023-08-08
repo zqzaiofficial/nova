@@ -35,6 +35,7 @@ section {
     align-items: center;
     min-height: 400px;
     padding: 0px 2vw;
+    overflow-x: hidden;
 }
 
 #featuresArea {
