@@ -136,6 +136,10 @@ h1 {
     }
 }
 
+.allContainer {
+       margin-top: 150px !important;
+}
+
 @media (max-width: 479px) {
     #featuresArea {
         margin-top: 325px;
