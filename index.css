@@ -4,6 +4,23 @@
 }
 
 @font-face {
+    font-family: "Argentum-Bold";
+    src: url("./fonts/ArgentumSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Argentum-SemiBold";
+    src: url("./fonts/ArgentumSans-SemiBold.ttf");
+}
+
+.containerSub {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    animation: fadeinTyping 3s ease 1.25s 1 normal forwards;
+}
+
+@font-face {
     font-family: "Argentum";
     src: url("./fonts/ArgentumSans-Regular.ttf");
 }
@@ -11,6 +28,56 @@
 @font-face {
     font-family: "Argentum-Light";
     src: url("./fonts/ArgentumSans-Light.ttf");
+}
+
+#subHeading {
+    font-family: 'Argentum-SemiBold';
+    opacity: 0.8;
+    text-align: center;
+    transition: 1s;
+}
+
+.lime {
+    color: #30b130;
+    font-family: "Argentum-Bold";
+}
+
+.ghost {
+    color: #c013c0;
+    font-family: "Argentum-Bold";
+    filter: blur(0px);
+    animation: ghostHeader 2.5s infinite;
+}
+
+.magenta {
+    color: #c013c0;
+    font-family: "Argentum-Bold";
+}
+
+.aqua {
+    color: #008cff;
+    font-family: "Argentum-Bold";
+}
+
+.custom-shape-divider-top-1691520460 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1691520460 svg {
+    position: relative;
+    display: block;
+    width: calc(125% + 1.3px);
+    height: 125px;
+    transform: rotateY(180deg);
+}
+
+.custom-shape-divider-top-1691520460 .shape-fill {
+    fill: #3B3D49;
 }
 
 * {
@@ -21,7 +88,11 @@
     text-decoration: none;
 }
 
-
+.navBar {
+    display: block;
+    position: sticky;
+    background: #251446;
+}
 
 body {
     background: #202128;
@@ -35,11 +106,10 @@ section {
     align-items: center;
     min-height: 400px;
     padding: 0px 2vw;
-    overflow-x: hidden;
 }
 
 #featuresArea {
-    margin-top: 325px;
+    margin-top: 100px;
 }
 
 h1 {
@@ -49,6 +119,7 @@ h1 {
     font-size: 3rem;
     line-height: 1;
     transition: 1s;
+    margin-bottom: 10px;
 }
 
 #featuresArea {
@@ -66,6 +137,10 @@ h1 {
 }
 
 @media (max-width: 479px) {
+    #featuresArea {
+        margin-top: 325px;
+    }
+
     h1 {
         font-size: 2.35rem;
     }
@@ -97,6 +172,30 @@ h1 {
     }
 }
 
+@keyframes ghostHeader {
+    0% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+    20% {
+        opacity: 1;
+        filter: blur(2.5px);
+    }
+    40% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+    60% {
+        opacity: 1;
+        filter: blur(2.5px);
+    }
+    100% {
+        opacity: 1;
+        filter: blur(0px);
+    }
+}
+
+
 @keyframes fadeinHeader {
     0% {
         opacity: 0;
@@ -120,6 +219,42 @@ h1 {
     100% {
         opacity: 1;
         transform: translateY(0);
+        filter: blur(0px);
+    }
+}
+
+@keyframes spinBtn {
+    0% {
+        transform: translateY(-7px);
+    }
+
+    1% {
+        filter: blur(5%);
+    }
+
+    50% {
+        transform: translateY(0px);
+        filter: blur(0);
+    }
+
+    51% {
+        filter: blur(5%);
+    }
+
+    100% {
+        transform: translateY(-7px);
+        filter: blur(0);
+    }
+}
+
+@keyframes fadeinTyping {
+    0% {
+        opacity: 0;
+        filter: blur(5px);
+    }
+    
+    100% {
+        opacity: 1;
         filter: blur(0px);
     }
 }
@@ -193,13 +328,13 @@ h1 {
     border-width: 1px;
     border-radius: 15px;
     font-family: "Argentum", 'sans-serif';
-    border-color: #333333;
-    background: #121214;
+    border-color: #aebfff;
+    background: #7289da;
     transition: .25s;
 }
 
 .headerButtons a:hover {
-    box-shadow: -5px -1px 35px #0f0f0f;
+    box-shadow: 0px 0px 35px #5a6caf;
     cursor: pointer;
 }
 
@@ -217,13 +352,14 @@ h1 {
 }
 
 #downloadButton:hover {
-    box-shadow: -5px -1px 35px #244d2d;
+    box-shadow: 0px 0px 35px #306b3d;
 }
 
 #headerImg {
     opacity: 0;
     transform: translateY(100%);
-    z-index: 0;
+    z-index: 10;
+    
     animation: fadeinImg 3s ease 1.25s 1 normal forwards;  
 }
 
@@ -305,4 +441,9 @@ p {
     opacity: 1 !important;
     filter: blur(0px) !important;
     transform: translateX(0) !important;
+}
+
+#featuresBtn {
+    font-family: "Argentum";
+    animation: spinBtn 1s infinite;
 }
